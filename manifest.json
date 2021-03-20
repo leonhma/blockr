@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "blockr",
+    "version": "0.0.1",
+
+    "description": "Removes ads and blocks requests to ad-serving hosts.",
+  
+    "author": "leonhma",
+    "background": {
+      "service_worker": "service.js"
+    },
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "blocking_rules",
+        "enabled": true,
+        "path": "deps/blocked.json"
+      }]
+    },
+    "offline_enabled": true,
+    "permissions": [
+      "scripting",
+      "tabs",
+      "activeTab",
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+      "*://*/*"
+    ]
+}
