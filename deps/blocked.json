@@ -1,0 +1,57 @@
+[{
+    "id": 1,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||googlesyndication.com"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||doubleclick.net"
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "pagead"
+    }
+  },
+  {
+    "id" : 4,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||adservice.google*"
+    }
+  },
+  {
+    "id" : 5,
+    "priority": 1,
+    "action": { "type" : "allow" },
+    "condition": {
+      "urlFilter": "||doubleclick.net",
+      "domains": ["aternos.org"]
+    }
+  },
+  {
+    "id" : 6,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||ads.*"
+    }
+  },
+  {
+    "id" : 7,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "adsystem"
+    }
+  }]
