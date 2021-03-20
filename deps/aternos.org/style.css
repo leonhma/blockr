@@ -1,0 +1,3 @@
+.header-ad, .sidebar, .ad > * {
+    display: none !important
+}
