@@ -54,4 +54,28 @@
     "condition": {
       "urlFilter": "adsystem"
     }
+  },
+  {
+    "id" : 8,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||moatads.com"
+    }
+  },
+  {
+    "id" : 9,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||quantserve.com"
+    }
+  },
+  {
+    "id" : 10,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||cpmstar.com"
+    }
   }]
