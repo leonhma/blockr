@@ -19,6 +19,9 @@ As seen above, blockr uses a quite limited set of permissions. In addition, it o
 ## There's a missing site?
 If there's a site that doesn't look like it should (ads are visible, weird white spaces appear, etc.), you can open an issue by going to the 'issues' tab on the top-left of the github page and selecting 'page request' as your template. Now just fill out the form and we'll see what we can do. If you seem familiar with javascript or css, though, you might want to look into contributing to this project.
 
+## Experiencing a bug?
+If you can, google your issue. If the issue persists or you think we should know about it, please go to the issue tracker and submit a new bug-report.
+
 ## Contributing
 If you like this project and want it to grow, contributing is a great way to help it do so. This really is what keeps the project alive and expands its functionality.
 
