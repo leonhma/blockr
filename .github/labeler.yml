@@ -1,0 +1,14 @@
+changed-core:
+  - any: ['./manifest.json', './service.js', './gitignore']
+
+changed-docs:
+ - any: ['./README.md', './.github/ISSUE_TEMPLATE/*']
+
+changed-pages:
+ - all: ['./deps/**/*', '!./deps/*']
+
+changed-blocked:
+ - ./deps/*
+ 
+invalid:
+  - ./LICENSE
