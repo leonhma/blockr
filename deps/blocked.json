@@ -102,4 +102,69 @@
     "condition": {
       "urlFilter": "||ezoic.net"
     }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": { "type" : "allow" },
+    "condition": {
+      "urlFilter": "||doubleclick.net",
+      "domains": ["files.minecraftforge.net"]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||ad-delivery.net"
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||openx.net"
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||rubiconproject.com"
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||3lift.com"
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||indexww.com"
+    }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||adnxs.com"
+    }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||lijit.com"
+    }
   }]
