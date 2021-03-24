@@ -1,0 +1,1 @@
+$('.ads-ezoic, .ezoic-ad, .ezo_ad').remove();

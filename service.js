@@ -39,7 +39,12 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {            
         domain.push('$')
         const path = domain.concat(re[3].split('/')).filter(item => item)                                    // append path to domain ('www.abcd.com/watch?key=dgydfb', ['abcd.com', 'www', '$'] -> ['abcd.com', 'www', '$', 'watch'])
         console.log(path)                                                                                    // log path
-        tryInject(randomTabId, tabId, path, 'script.js', 0)                                                  // try injecting js
+        chrome.scripting.executeScript({                                                                     // insert jquery
+            target: {tabId: tabId},                                                                          // specify tab to insert into
+            files: ['deps/jquery-3.6.0.slim.min.js']                                                         // specify file to insert
+        }).then((_result) => {                                                                               // then...
+            tryInject(randomTabId, tabId, path, 'script.js', 0)                                              // try injecting js
+        })
         tryInject(randomTabId, tabId, path, 'style.css', 1)                                                  // try inject css
     }
 })

@@ -10,7 +10,6 @@ function wait(selector, cb) {
 }
 
 var observer = new MutationObserver(() => {
-  console.log('tick')
   const el = document.querySelector('.ytp-ad-skip-button.ytp-button')
   if(el) {
     el.click();

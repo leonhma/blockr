@@ -27,7 +27,7 @@
     "priority": 1,
     "action": { "type" : "block" },
     "condition": {
-      "urlFilter": "||adservice.google*"
+      "urlFilter": "||adservice.google"
     }
   },
   {
@@ -77,5 +77,29 @@
     "action": { "type" : "block" },
     "condition": {
       "urlFilter": "||cpmstar.com"
+    }
+  },
+  {
+    "id" : 11,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||googleadservices.com"
+    }
+  },
+  {
+    "id" : 12,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||ezodn.com"
+    }
+  },
+  {
+    "id" : 13,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||ezoic.net"
     }
   }]
