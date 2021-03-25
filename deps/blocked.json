@@ -175,4 +175,68 @@
     "condition": {
       "urlFilter": "||youtube.com/api/stats/ads"
     }
+  },
+  {
+    "id": 23,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||adsafeprotected.com"
+    }
+  },
+  {
+    "id": 24,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||taboola.net"
+    }
+  },
+  {
+    "id": 25,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "adserve"
+    }
+  },
+  {
+    "id": 26,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "ml314.com"
+    }
+  },
+  {
+    "id": 27,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "cpx.to"
+    }
+  },
+  {
+    "id": 28,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "eyeota.net"
+    }
+  },
+  {
+    "id": 29,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "consensu.org"
+    }
+  },
+  {
+    "id": 30,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "ntv.io"
+    }
   }]
