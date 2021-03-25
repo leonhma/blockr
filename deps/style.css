@@ -1,0 +1,5 @@
+.wh_ad_inner, .dfp-leaderboard-container, .ad-unit, #mobile-adhesion-ad,
+.header-ad, .ad, .zmgad-full-width, #spotim-specific, .zmgad-right-rail,
+*[data-ad] {
+    display: none !important
+}

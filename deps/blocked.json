@@ -239,4 +239,84 @@
     "condition": {
       "urlFilter": "ntv.io"
     }
+  },
+  {
+    "id": 31,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "advertising"
+    }
+  },
+  {
+    "id": 32,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||bounceexchange.com"
+    }
+  },
+  {
+    "id": 33,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||evidon.com"
+    }
+  },
+  {
+    "id": 34,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||krxd.net"
+    }
+  },
+  {
+    "id": 35,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||evidon.com"
+    }
+  },
+  {
+    "id": 36,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||tru.am"
+    }
+  },
+  {
+    "id": 37,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||qualtrics.com"
+    }
+  },
+  {
+    "id": 38,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||aswpsdkus.com"
+    }
+  },
+  {
+    "id": 39,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||imrworldwide.com"
+    }
+  },
+  {
+    "id": 40,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||trackonomics.net"
+    }
   }]

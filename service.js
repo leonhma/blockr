@@ -1,16 +1,16 @@
 var randomTabId, randomTabIdOld                                                                              // define variable for global scope
 
-function tryInject(randomTabIdExpected, tabId, path, filename, js_css) {                                    // go up folders 'till file is found
-    const file = path.join('/')                                                                             // get path string out of array (['abcd.com', 'www', '$'] -> 'abcd.com/www/$')
-    if(!js_css) {                                                                                           // only js is accepted in executeScript
-        chrome.scripting.executeScript({                                                                    // insert js
-            target: {tabId: tabId},                                                                         // specify tab to insert into
-            files: [`deps/${file}/${filename}`]                                                             // specify file to insert ('deps/abcd.com/www/$/script.js')
-        }).then((_result) => {                                                                              // if sucessful...
-            console.log(`injected ${file}/${filename}`)                                                     // log a message to the service worker console
-        }).catch((_err) => {                                                                                // if not sucessful...
-            if(randomTabId == randomTabIdExpected && path.length > 1) {                                     // and the tab has not changed and were no at the host...
-                tryInject(randomTabIdExpected, tabId, path.slice(0, path.length - 1), filename, js_css)     // trigger recursion (-> ['abcd.com', 'www']...)
+function tryInject(randomTabIdExpected, tabId, path, filename, js_css) {                                     // go up folders 'till file is found
+    const file = path.join('/')                                                                              // get path string out of array (['abcd.com', 'www', '$'] -> 'abcd.com/www/$')
+    if(!js_css) {                                                                                            // only js is accepted in executeScript
+        chrome.scripting.executeScript({                                                                     // insert js
+            target: {tabId: tabId},                                                                          // specify tab to insert into
+            files: [`deps/${file}/${filename}`]                                                              // specify file to insert ('deps/abcd.com/www/$/script.js')
+        }).then((_result) => {                                                                               // if sucessful...
+            console.log(`injected ${file}/${filename}`)                                                      // log a message to the service worker console
+        }).catch((_err) => {                                                                                 // if not sucessful...
+            if(randomTabId == randomTabIdExpected && path.length > 0) {                                      // and the tab has not changed and were no at the host...
+                tryInject(randomTabIdExpected, tabId, path.slice(0, path.length - 1), filename, js_css)      // trigger recursion (-> ['abcd.com', 'www']...)
             }
         })
     } else {
@@ -20,7 +20,7 @@ function tryInject(randomTabIdExpected, tabId, path, filename, js_css) {        
         }).then(() => {
             console.log(`injected ${file}/${filename}`)
         }).catch((_err) => {
-            if(randomTabId == randomTabIdExpected && path.length > 1) {
+            if(randomTabId == randomTabIdExpected && path.length > 0) {
                 tryInject(randomTabIdExpected, tabId, path.slice(0, path.length - 1), filename, js_css)
             }
         })
