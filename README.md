@@ -10,7 +10,7 @@ This extension relies on small style/script files that are injected when a page 
 
 ## What permissions does it need?
 It only needs very limited permissions:
-* Reading browser-history   _<- This is just to know which sebsite you are looking at and execute the appropiate actions. It neither goes back in browser history, nor does it make any of it accessible to anyone else._
+* Reading browser-history   _<- This is just to know which website you are looking at and execute the appropiate actions. It neither goes back in browser history, nor does it make any of it accessible to anyone else._
 * Blocking of contents on all sites you visit    _<- This permission is to allow the extension to do it's work._
 
 ## Is it safe?
