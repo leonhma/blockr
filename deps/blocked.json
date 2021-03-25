@@ -167,4 +167,12 @@
     "condition": {
       "urlFilter": "||openx.net"
     }
+  },
+  {
+    "id": 22,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||youtube.com/api/stats/ads"
+    }
   }]

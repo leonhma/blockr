@@ -10,7 +10,7 @@ function wait(selector, cb) {
 }
 
 var observer = new MutationObserver(() => {
-  const el = document.querySelector('.ytp-ad-skip-button.ytp-button')
+  const el = document.querySelector('.ytp-ad-skip-button-slot')
   if(el) {
     el.click();
   }
