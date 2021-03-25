@@ -1,14 +1,19 @@
-function wait(selector, cb) {
+function await(selector, cb) {
     const el = document.querySelector(selector);
     if(el) {
-      cb(el)
-      return
+       cb(el)
+       return
     }
     window.requestAnimationFrame(() => {
-      wait(selector, cb)
+        await(selector, cb)
     })
   }
 
-wait('.skip', (el) => {
+await('.skip', (el) => {
     window.location = el.href;
+    setTimeout(() => {
+      if(window.location.hostname.endsWith('adfoc.us')) {
+        chrome.runtime.sendMessage({action: 'blockrCmd', command: 'tabBack'})
+      }
+    }, 1500)
 })
