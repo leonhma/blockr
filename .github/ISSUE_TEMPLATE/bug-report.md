@@ -17,4 +17,4 @@ assignees: ''
 <!-- Found a solution? Add it here. If not, leave it empty. -->
 
 **Additional Information and/or screenshots**
-<!-- Add additional information here. Screenshots would aslo be appreciated. -->
+<!-- Add additional information here. Screenshots would also be appreciated. -->
