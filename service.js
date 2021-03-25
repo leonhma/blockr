@@ -1,4 +1,4 @@
-var randomTabId                                                                                             // define variable for global scope
+var randomTabId, randomTabIdOld                                                                              // define variable for global scope
 
 function tryInject(randomTabIdExpected, tabId, path, filename, js_css) {                                    // go up folders 'till file is found
     const file = path.join('/')                                                                             // get path string out of array (['abcd.com', 'www', '$'] -> 'abcd.com/www/$')
@@ -29,7 +29,10 @@ function tryInject(randomTabIdExpected, tabId, path, filename, js_css) {        
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {                                         // add listener to tab-updates (site changes)   
     if((changeInfo.status == 'loading')) {                                                                   // check if the site has somewhat loaded
-        randomTabId = Math.random()                                                                          // generate a new randomTabId
+        while(randomTabId == randomTabIdOld) {
+            randomTabId = Math.random()                                                                      // generate a new randomTabId
+        }                                                                  
+         randomTabIdOld = randomTabId
         const re = tab.url.match(/^(.*?):\/\/(.*?)\/(.*?)(?=\/?$|\?|#)/)                                     // regex match current url
         if(!['http', 'https'].includes(re[1])) {return}                                                      // return on unsupported protocol
         var domain = re[2].split('.')                                                                        // restructure regex domain to get an array ('www.abcd.com' -> ['abcd.com', 'www', '$'])

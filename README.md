@@ -6,11 +6,11 @@ Blockr is a browser extension that blocks ad-serving hosts. It is also able to i
 
 
 ## How does it work?
-This extension relies on small style/script files that are placed in a specific folder structure and injected when a page is loaded. They are located under the 'deps' folder together with a list of blocked domains. So, if you put a file called `script.js` into `youtube.com/www/$/watch`, it is automatically injected when `www.youtube.com/watch` is loaded. Also, a wildcard-like logic is used, that when there is no file found, it checks higher folders, such as `youtube.com/www/$`, `youtube.com/www`, ...
+This extension relies on small style/script files that are injected when a page is loaded. It also blocks requests to ad-serving hosts using a steadily growing list of blocked domains.
 
 ## What permissions does it need?
 It only needs very limited permissions:
-* Reading browser-history   _<- This is just to know which sebsite you are looking at and execute the appropiate actions. It neither goes back in browser history, nor does it make any of it accessible to a third-party._
+* Reading browser-history   _<- This is just to know which sebsite you are looking at and execute the appropiate actions. It neither goes back in browser history, nor does it make any of it accessible to anyone else._
 * Blocking of contents on all sites you visit    _<- This permission is to allow the extension to do it's work._
 
 ## Is it safe?

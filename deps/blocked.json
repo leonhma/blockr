@@ -121,14 +121,6 @@
     }
   },
   {
-    "id": 21,
-    "priority": 1,
-    "action": { "type" : "block" },
-    "condition": {
-      "urlFilter": "||openx.net"
-    }
-  },
-  {
     "id": 16,
     "priority": 1,
     "action": { "type" : "block" },
@@ -166,5 +158,13 @@
     "action": { "type" : "block" },
     "condition": {
       "urlFilter": "||lijit.com"
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||openx.net"
     }
   }]

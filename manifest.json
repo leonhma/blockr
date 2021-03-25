@@ -16,11 +16,9 @@
         "path": "deps/blocked.json"
       }]
     },
-    "offline_enabled": true,
     "permissions": [
       "scripting",
       "tabs",
-      "activeTab",
       "declarativeNetRequest"
     ],
     "host_permissions": [
