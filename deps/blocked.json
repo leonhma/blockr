@@ -319,4 +319,52 @@
     "condition": {
       "urlFilter": "||trackonomics.net"
     }
+  },
+  {
+    "id": 41,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||adrtx.net"
+    }
+  },
+  {
+    "id": 42,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||akamaihd.net"
+    }
+  },
+  {
+    "id": 43,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||ioam.de"
+    }
+  },
+  {
+    "id": 44,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||vtracy.de"
+    }
+  },
+  {
+    "id": 45,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||criteo.net"
+    }
+  },
+  {
+    "id": 46,
+    "priority": 1,
+    "action": { "type" : "block" },
+    "condition": {
+      "urlFilter": "||opecloud.com"
+    }
   }]
