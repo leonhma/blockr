@@ -1,3 +1,5 @@
+**This project is now archived.**
+
 # blockr
 A browser extension that blocks ads.
 
